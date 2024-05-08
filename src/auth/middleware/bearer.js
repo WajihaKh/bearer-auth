@@ -6,7 +6,7 @@ module.exports = async (req, res, next) => {
 
   try {
 
-    if (!req.headers.authorization) { return next( new Error('Invalid Login')); }
+    if (!req.headers.authorization) { return next( new Error('Invalid Authentication')); }
 
     const token = req.headers.authorization.split(' ')[1];
     console.log('Token: ', token);
