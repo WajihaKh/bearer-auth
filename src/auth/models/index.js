@@ -16,7 +16,6 @@ case 'test':
   break;
 case 'production':
   db_config.dialectOptions = {
-    ssl: true,
     rejectUnauthorized: false,
   };
   break;

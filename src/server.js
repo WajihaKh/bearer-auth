@@ -29,7 +29,7 @@ app.use(handleNotFound);
 
 module.exports = {
   server: app,
-  startup: (port) => {
+  start: (port) => {
     app.listen(port, () => {
       console.log(`Server Up on ${port}`);
     });
